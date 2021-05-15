@@ -10,7 +10,7 @@ pipeline {
 		stage('Compile'){
 			steps{
 				echo 'Compile stage'
-				echo %hostname%
+				echo "Compile %date%:%time%"
 			}
 		}
 		stage('validate'){
