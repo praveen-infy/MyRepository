@@ -10,7 +10,7 @@ pipeline {
 		stage('Compile'){
 			steps{
 				echo 'Compile stage'
-				echo "Compile %date%:%time%"
+				fileExists 'Multi_Config_Project'
 			}
 		}
 		stage('validate'){
